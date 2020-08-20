@@ -1,0 +1,52 @@
+h2 {
+    padding: 10px 0px 15px 0;
+}
+
+.color-rosado {
+    color: #e885ad;
+}
+
+.img-funciona{
+    max-width: 100%;
+}
+
+.button-img {
+    max-width: 100%;
+}
+
+.texto {
+    color: #0303a8;
+}
+
+.texto-ayuda {
+    color: #c01259;
+}
+
+.parrafo-ayuda {
+    color: #676a76;
+}
+
+.footer-pago {
+    max-width: 80%;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.has-search .form-control {
+    padding-left: 3px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 3px;
+    height: 3px;
+    line-height: 3px;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    
+}
