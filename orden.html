@@ -47,135 +47,93 @@
             </nav>
         </div>
 
-       <!--ordenes-->
+        <!--ordenes-->
         <div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4 class="texto-ayuda">Órdenes</h4>
+                <div class="row mt-3 mb-3">
+                    <div class="col-lg-6">
+                        <h4 class="texto-ayuda d-flex justify-content-start">Órdenes</h4>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="parrafo-ayuda font-size-15 d-flex justify-content-end">
+                            Nueva orden &nbsp;<a href="#"><img src="img/btn-producto.png" height="40" width="40" alt="" /></a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <!--Buscador-->
         <div class="container">
-            <div class="row mt-4 mb-4 d-flex justify-content-left">    
-                <div class="col-lg-6 ">
+            <div class="row mt-4 mb-4 d-flex justify-content-left">
+                <div class="col-lg-6">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                <span id="search_concept">Filtro</span> <span class="caret"></span>
-                            </button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span id="search_concept">Filtro</span> <span class="caret"></span></button>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="#">Categoría</a></li>
-                              <li><a href="#">Color</a></li>
-                              <li><a href="#">Marca</a></li>
-                              <li><a href="#">Precio</a></li>
-                              <li class="divider"></li>
-                              <li><a href="#">Peso</a></li>
+                                <li><a href="#">Categoría</a></li>
+                                <li><a href="#">Color</a></li>
+                                <li><a href="#">Marca</a></li>
+                                <li><a href="#">Precio</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Peso</a></li>
                             </ul>
                         </div>
-                        <input type="hidden" name="search_param" value="all" id="search_param">         
-                        <input type="text" class="form-control" name="x" placeholder="Búsqueda rápida">
+                        <input type="hidden" name="search_param" value="all" id="search_param" />
+                        <input type="text" class="form-control" name="x" placeholder="Búsqueda rápida" />
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
                         </span>
                     </div>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6">
                     <div class="input-group">
                         <div class="input-group-btn search-panel">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Pedidos mostrados
-                                <span id="search_concept"></span> <span class="caret"></span>
-                            </button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Pedidos mostrados <span id="search_concept"></span> <span class="caret"></span></button>
                             <ul class="dropdown-menu" role="menu">
-                              <li><a href="#">20</a></li>
-                              <li><a href="#">30</a></li>
-                              <li><a href="#">50</a></li>
-                              <li><a href="#">100</a></li>
+                                <li><a href="#">20</a></li>
+                                <li><a href="#">30</a></li>
+                                <li><a href="#">50</a></li>
+                                <li><a href="#">100</a></li>
                             </ul>
                         </div>
-                       
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!--tabla del orden-->
         <div>
             <div class="container mt-5">
                 <div class="d-flex justify-content-center row">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <div class="rounded">
                             <div class="table-responsive table-borderless">
                                 <table class="table">
                                     <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                <div class="toggle-btn">
-                                                    <div class="inner-circle"></div>
-                                                </div>
-                                            </th>
-                                            <th>Order #</th>
-                                            <th>Company name</th>
-                                            <th>status</th>
+                                        <tr class="texto-ayuda text-center font-size-12">
+                                            <th>Completado el</th>
+                                            <th>Número</th>
+                                            <th>Riesgo</th>
+                                            <th>Estado</th>
+                                            <th>Estado del pago</th>
+                                            <th>Estado del envío</th>
+                                            <th>Email</th>
                                             <th>Total</th>
-                                            <th>Created</th>
-                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-body">
-                                        <tr class="cell-1">
-                                            <td class="text-center">
-                                                <div class="toggle-btn">
-                                                    <div class="inner-circle"></div>
-                                                </div>
+                                        <tr class="cell-1 parrafo-ayuda text-center">
+                                            <td>28 / 10 / 2020</td>
+                                            <td>654JHGHFD564H</td>
+                                            <td><span class="badge badge-success">Seguro</span></td>
+                                            <td><span class="badge badge-success">Completado</span></td>
+                                            <td><span class="badge badge-success">Por pagar</span></td>
+                                            <td><span class="badge badge-success">Pendiente</span></td>
+                                            <td>Felipe@gmail.com</td>
+                                            <td>$40.56</td>
+                                            <td>
+                                                <a href="#"><i class="fas fa-edit"></i></a>
                                             </td>
-                                            <td>#SO-13487</td>
-                                            <td>Gasper Antunes</td>
-                                            <td><span class="badge badge-success">Fullfilled</span></td>
-                                            <td>$2674.00</td>
-                                            <td>Today</td>
-                                            <td><i class="fa fa-ellipsis-h text-black-50"></i></td>
-                                        </tr>
-                                        <tr class="cell-1">
-                                            <td class="text-center">
-                                                <div class="toggle-btn">
-                                                    <div class="inner-circle"></div>
-                                                </div>
-                                            </td>
-                                            <td>#SO-13453</td>
-                                            <td>Aartsen van</td>
-                                            <td><span class="badge badge-info">Confirmed</span></td>
-                                            <td>$3454.00</td>
-                                            <td>Yesterday</td>
-                                            <td><i class="fa fa-ellipsis-h text-black-50"></i></td>
-                                        </tr>
-                                        <tr class="cell-1">
-                                            <td class="text-center">
-                                                <div class="toggle-btn">
-                                                    <div class="inner-circle"></div>
-                                                </div>
-                                            </td>
-                                            <td>#SO-13498</td>
-                                            <td>Trashes Habard</td>
-                                            <td><span class="badge badge-danger">Partially shipped</span></td>
-                                            <td>$6274.00</td>
-                                            <td>May 12,2020</td>
-                                            <td><i class="fa fa-ellipsis-h text-black-50"></i></td>
-                                        </tr>
-                                        <tr class="cell-1">
-                                            <td class="text-center">
-                                                <div class="toggle-btn">
-                                                    <div class="inner-circle"></div>
-                                                </div>
-                                            </td>
-                                            <td>#SO-16499</td>
-                                            <td>Samban Hubart</td>
-                                            <td><span class="badge badge-success">Fullfilled</span></td>
-                                            <td>$6375.00</td>
-                                            <td>May 11,2020</td>
-                                            <td><i class="fa fa-ellipsis-h text-black-50"></i></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -240,16 +198,17 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
         <script type="text/javascript">
-            $(document).ready(function(e){
-            $('.search-panel .dropdown-menu').find('a').click(function(e) {
-                e.preventDefault();
-                var param = $(this).attr("href").replace("#","");
-                var concept = $(this).text();
-                $('.search-panel span#search_concept').text(concept);
-                $('.input-group #search_param').val(param);
+            $(document).ready(function (e) {
+                $(".search-panel .dropdown-menu")
+                    .find("a")
+                    .click(function (e) {
+                        e.preventDefault();
+                        var param = $(this).attr("href").replace("#", "");
+                        var concept = $(this).text();
+                        $(".search-panel span#search_concept").text(concept);
+                        $(".input-group #search_param").val(param);
+                    });
             });
-        });
-
         </script>
     </body>
 </html>
