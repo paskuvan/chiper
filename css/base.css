@@ -9,6 +9,8 @@ body {
     color: #3b3950;
     background: #0303a8;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 p {

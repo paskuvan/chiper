@@ -401,6 +401,18 @@ p {
     margin-left: 19px
 }
 
-.vertical {
+.vertical-mid {
     vertical-align:middle;
+}
+
+.fa-edit {
+    color:#e885ad;
+}
+
+.fa-clone {
+    color: #0303a8;
+}
+
+.fa-window-close {
+    color: #c01259;
 }
