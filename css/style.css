@@ -416,3 +416,9 @@ p {
 .fa-window-close {
     color: #c01259;
 }
+
+.table-shadow {
+    box-shadow: -2px 1px 20px 0px rgba(0,0,0,0.5);
+    display: block;
+    border-radius: 11px;
+}
