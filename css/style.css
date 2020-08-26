@@ -400,3 +400,7 @@ p {
 .toggle-btn.active>.inner-circle {
     margin-left: 19px
 }
+
+.vertical {
+    vertical-align:middle;
+}
