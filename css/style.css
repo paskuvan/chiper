@@ -13,6 +13,11 @@
     font-size: 20px;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #c01259 !important;
+    border-color: #c01259 !important;
+}
+
 hr {
     border-top: 4px solid #c01259;
     width: 30px;
