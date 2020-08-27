@@ -78,10 +78,6 @@ h2 {
 
 /*slider*/
 
-.card {
-    box-shadow: inset 0px 2px 13px 0px #ffffff, -1px 4px 20px #aaaaaa;
-}
-
 .btn-outline-dark {
     border-radius: 35px;
     font-size: 10px;
