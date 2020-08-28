@@ -119,11 +119,15 @@
                                         <div class="row rtwo">
                                             <div class="form-group col-md-6 ftwo py-3">
                                                 <label for="mail" class="texto">Roles</label>
+                                               <div class="pt-2">
                                                 <div class="toggle-btn">
                                                     <div class="inner-circle"></div>
                                                 </div>
-                                                <div class="toggle-btn">
-                                                    <div class="inner-circle"></div>
+                                               </div>
+                                                <div class="pt-2">
+                                                    <div class="toggle-btn">
+                                                        <div class="inner-circle"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="form-group col-md-6 ftwo py-3">
@@ -133,7 +137,7 @@
 
                                         <div class="row rfour">
                                             <div class="form-group col-md-6 fseven py-3">
-                                                <button type="submit" class="btn btn-primary"><span>Guardar</span></button> <button type="submit" class="btn btn-primary"><span>Cancelar</span></button>
+                                                <button type="submit" class="btn btn-primary"><span>Guardar</span></button> <button type="submit" class="btn btn-outline-primary"><span>Cancelar</span></button>
                                             </div>
                                         </div>
                                     </form>
@@ -149,7 +153,7 @@
                                         <div class="form-group col-md-6 fone py-3"><label for="mail" class="texto">Key</label> <input type="text" class="form-control table-shadow" placeholder="un86tybsrvts8btdnyfmu286yb861n1m86fnb68dnft8mn" /></div>
                                         <div class="row rfour">
                                             <div class="form-group col-md-6 fseven py-3">
-                                                <button type="submit" class="btn btn-primary"><span>Guardar</span></button> <button type="submit" class="btn btn-primary"><span>Cancelar</span></button>
+                                                <button type="submit" class="btn btn-primary"><span>Guardar</span></button> <button type="submit" class="btn btn-outline-primary"><span>Cancelar</span></button>
                                             </div>
                                         </div>
                                     </form>
@@ -215,5 +219,13 @@
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.toggle-btn').click(function() {
+            $(this).toggleClass('active').siblings().removeClass('active');
+            });
+
+            });
+        </script>
     </body>
 </html>

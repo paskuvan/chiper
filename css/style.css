@@ -373,8 +373,6 @@ p {
     transition: 250ms ease all;
 }
 
-/*toggle*/
-
 /*toggle */
 .toggle-btn {
     width: 40px;
@@ -462,4 +460,3 @@ p {
         background-repeat: no-repeat !important;
     }
 }
-
