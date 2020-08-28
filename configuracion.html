@@ -47,48 +47,58 @@
             </nav>
         </div>
 
-        <!--botones-->
+        <!--Dropdown Menu-->
         <div style="background-color: white;">
-            
-        
-            <nav class="menu">
-                <ol>
-                    <li class="menu-item"><a href="#">Órdenes</a></li>
-                    <li class="menu-item">
-                        <a href="#">Devoluciones</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Solicitar</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Productos</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Productos</a></li>
-                            <li class="menu-item"><a href="#">Opciones de tipeo</a></li>
-                            <li class="menu-item"><a href="#">Propiedades</a></li>
-                            <li class="menu-item"><a href="#">Clasificaciones</a></li>
-                            <li class="menu-item"><a href="#">Clasificados</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu-item"><a href="#">Reportes</a></li>
-                    <li class="menu-item">
-                        <a href="#">Promoción</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Ofertas</a></li>
-                            <li class="menu-item"><a href="#">Cupones</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu-item"><a href="#">Usuario</a></li>
-                    <li class="menu-item">
-                        <a href="#">Configuración</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Editar datos</a></li>
-                            <li class="menu-item"><a href="#">Cambiar dirección</a></li>
-                            <li class="menu-item"><a href="#">Notificaciones</a></li>
-                        </ol>
-                    </li>
-                </ol>
-            </nav> 
+            <div id="menu_area" class="menu-area">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="active"><a href="#">Órdenes</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Devoluciones</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Reportes</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Promoción</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Usuario</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--Configutación-->
@@ -116,16 +126,18 @@
                                     <form class="myform">
                                         <div class="row rone">
                                             <div class="form-group col-md-6 fone py-3"><label for="mail" class="texto">E-mail</label> <input type="text" class="form-control table-shadow" placeholder="Jaime@chiper.cl" /></div>
-                                            <div class="form-group col-md-6 ftwo py-3"><label for="mail" class="texto">Contraseña</label> <input type="password" class="form-control table-shadow" placeholder="*************************" /></div>
+                                            <div class="form-group col-md-6 ftwo py-3">
+                                                <label for="mail" class="texto">Contraseña</label> <input type="password" class="form-control table-shadow" placeholder="*************************" />
+                                            </div>
                                         </div>
                                         <div class="row rtwo">
                                             <div class="form-group col-md-6 ftwo py-3">
                                                 <label for="mail" class="texto">Roles</label>
-                                               <div class="pt-2">
-                                                <div class="toggle-btn">
-                                                    <div class="inner-circle"></div>
+                                                <div class="pt-2">
+                                                    <div class="toggle-btn">
+                                                        <div class="inner-circle"></div>
+                                                    </div>
                                                 </div>
-                                               </div>
                                                 <div class="pt-2">
                                                     <div class="toggle-btn">
                                                         <div class="inner-circle"></div>
@@ -152,7 +164,9 @@
                             <div class="col-md-12 table-shadow mt-4 mb-4">
                                 <div class="col-md-12 col-12 xcol">
                                     <form class="myform">
-                                        <div class="form-group col-md-6 fone py-3"><label for="mail" class="texto">Key</label> <input type="text" class="form-control table-shadow" placeholder="un86tybsrvts8btdnyfmu286yb861n1m86fnb68dnft8mn" /></div>
+                                        <div class="form-group col-md-6 fone py-3">
+                                            <label for="mail" class="texto">Key</label> <input type="text" class="form-control table-shadow" placeholder="un86tybsrvts8btdnyfmu286yb861n1m86fnb68dnft8mn" />
+                                        </div>
                                         <div class="row rfour">
                                             <div class="form-group col-md-6 fseven py-3">
                                                 <button type="submit" class="btn btn-primary"><span>Guardar</span></button> <button type="submit" class="btn btn-outline-primary"><span>Cancelar</span></button>
@@ -222,12 +236,31 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
         <script type="text/javascript">
-            $(document).ready(function(){
-            $('.toggle-btn').click(function() {
-            $(this).toggleClass('active').siblings().removeClass('active');
+            $(document).ready(function () {
+                $(".toggle-btn").click(function () {
+                    $(this).toggleClass("active").siblings().removeClass("active");
+                });
             });
+        </script>
 
-            });
+        <script type="text/javascript">
+            (function ($) {
+                $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+                    if (!$(this).next().hasClass("show")) {
+                        $(this).parents(".dropdown-menu").first().find(".show").removeClass("show");
+                    }
+                    var $subMenu = $(this).next(".dropdown-menu");
+                    $subMenu.toggleClass("show");
+
+                    $(this)
+                        .parents("li.nav-item.dropdown.show")
+                        .on("hidden.bs.dropdown", function (e) {
+                            $(".dropdown-submenu .show").removeClass("show");
+                        });
+
+                    return false;
+                });
+            })(jQuery);
         </script>
     </body>
 </html>
