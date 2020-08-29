@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 a {
     text-decoration: none !important;
@@ -8,9 +8,9 @@ a {
 body {
     color: #3b3950;
     background: #0303a8;
-    font-weight: 500;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif !important;
 }
 
 p {
@@ -61,9 +61,9 @@ h6 {
     margin: 0 20px;
 }
 
-.navbar-custom .navbar-nav li:last-child a {
+/* .navbar-custom .navbar-nav li:last-child a {
     margin-right: 0px;
-}
+} */
 
 .navbar-custom .navbar-nav li .nav-link {
     padding-right: 0px;
