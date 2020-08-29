@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/all.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
         <title>Envíos - Chiper</title>
     </head>
     <body style="background-color: white;">
@@ -17,29 +17,29 @@
                 <div class="container">
                     <!-- LOGO -->
                     <a class="navbar-brand logo" href="index.html">
-                        <img src="img/logo-dark.png" alt="" class="logo-dark" height="35" />
+                        <img src="img/logo-dark.png" alt="" class="logo-dark" height="50" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="mdi mdi-menu"></i>
+                        <i class="fas fa-bars toggle-dark"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
                             <li class="nav-item active">
-                                <a href="#home" class="nav-link"><span style="color: #63656b;">Home</span></a>
+                                <a href="#home" class="nav-link texto-centro"><span style="color: #63656b;">Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#funciona" class="nav-link"><span style="color: #63656b;">¿Cómo funciona?</span></a>
+                                <a href="#funciona" class="nav-link texto-centro"><span style="color: #63656b;">¿Cómo funciona?</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#ayuda" class="nav-link"><span style="color: #63656b;">Ayuda</span></a>
+                                <a href="#ayuda" class="nav-link texto-centro"><span style="color: #63656b;">Ayuda</span></a>
                             </li>
                         </ul>
                         <ul class="navbar-nav navbar-center">
                             <li class="nav-item">
-                                <a href="#usuario" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="52" height="52" alt="" /></a>
+                                <a href="#usuario" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="52" height="52" alt="" /></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#compra" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart-dark.png" width="52" height="52" alt="" /></a>
+                                <a href="#compra" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart-dark.png" width="52" height="52" alt="" /></a>
                             </li>
                         </ul>
                     </div>
@@ -47,46 +47,59 @@
             </nav>
         </div>
 
-        <!--Menú vertical de botones-->
+        <!--Dropdown Menu-->
         <div style="background-color: white;">
-            <nav class="menu">
-                <ol>
-                    <li class="menu-item"><a href="#">Órdenes</a></li>
-                    <li class="menu-item">
-                        <a href="#">Devoluciones</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Solicitar</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">Productos</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Productos</a></li>
-                            <li class="menu-item"><a href="#">Opciones de tipeo</a></li>
-                            <li class="menu-item"><a href="#">Propiedades</a></li>
-                            <li class="menu-item"><a href="#">Clasificaciones</a></li>
-                            <li class="menu-item"><a href="#">Clasificados</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu-item"><a href="#">Reportes</a></li>
-                    <li class="menu-item">
-                        <a href="#">Promoción</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Ofertas</a></li>
-                            <li class="menu-item"><a href="#">Cupones</a></li>
-                        </ol>
-                    </li>
-                    <li class="menu-item"><a href="#">Usuario</a></li>
-                    <li class="menu-item">
-                        <a href="#">Configuración</a>
-                        <ol class="sub-menu">
-                            <li class="menu-item"><a href="#">Editar datos</a></li>
-                            <li class="menu-item"><a href="#">Cambiar dirección</a></li>
-                            <li class="menu-item"><a href="#">Notificaciones</a></li>
-                        </ol>
-                    </li>
-                </ol>
-            </nav>
+            <div id="menu_area" class="menu-area">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars toggle-light"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto texto-centro">
+                                    <li><a href="#">Órdenes</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Devoluciones</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Solicitar</a></li>
+                                            <li><a href="#">Estado</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Productos</a></li>
+                                            <li><a href="#">Opciones de tipeo</a></li>
+                                            <li><a href="#">Propiedades</a></li>
+                                            <li><a href="#">Clasificaciones</a></li>
+                                            <li><a href="#">Clasificados</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Reportes</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Promoción</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Ofertas</a></li>
+                                            <li><a href="#">Cupones</a></li>
+                                            <li><a href="#">Descuentos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Usuario</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Perfil</a></li>
+                                            <li><a href="#">Notificaciones</a></li>
+                                            <li><a href="#">Dirección</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--Menu de Configuración-->
@@ -96,11 +109,15 @@
                     <div class="col-md-2">
                         <div class="t-products p-2">
                             <div class="p-lists">
-                                <div class="d-flex justify-content-center mt-2 btn-config text-white">Cuentas</div>
-                                <div class="d-flex justify-content-center mt-2 btn-config text-white">Direcciones</div>
-                                <div class="d-flex justify-content-center mt-2 btn-config text-white">Órdenes</div>
-                                <div class="d-flex justify-content-center mt-2 btn-config text-white">Items</div>
-                                <div class="d-flex justify-content-center mt-2 btn-config text-white">Créditos</div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Carro</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Tienda</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Cliente</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Envíos</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Ajustes</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Pagos</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Autorizaciones de devolución</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Devolución al clientes</a></div>
+                                <div class="d-flex justify-content-center mt-2 btn-config text-white no-blue"><a href="#">Estado de cambios</a></div>
                             </div>
                         </div>
                     </div>
@@ -109,12 +126,12 @@
                     <div class="col-md-9">
                         <div class="row">
                             <div class="col-md-5">
-                                <h4 class="texto-ayuda">Órdenes / 654JHGHFD564H / Envíos</h4>
+                                <h4 class="texto-ayuda padding-center font-size-16">Órdenes / 654JHGHFD564H / Envíos</h4>
                             </div>
-                            <div class="col-md-6">
-                                <button type="button" class="btn btn-primary">Aprobar</button>
-                                <button type="button" class="btn btn-primary">Cancelar</button>
-                                <button type="button" class="btn btn-primary">Volver a envíar</button>
+                            <div class="col-md-6 text-right">
+                                <button type="button" class="btn btn-primary d-block d-md-inline-block">Aprobar <i class="fas fa-check"></i></button>
+                                <button type="button" class="btn btn-outline-primary d-block d-md-inline-block btn-envios">Cancelar <i class="fas fa-times"></i></button>
+                                <button type="button" class="btn btn-primary d-block d-md-inline-block btn-envios">Volver a envíar <i class="far fa-envelope"></i></button>
                             </div>
                         </div>
                         <!--Buscador-->
@@ -123,22 +140,12 @@
                                 <div class="col-md-12">
                                     <div class="rounded">
                                         <p class="font-size-15 texto mt-3 mb-3">Agregar producto</p>
+                                        <small>Nombre o SKU (Escribe las primeras 3 letras del nombre del producto)</small>
                                         <div class="input-group mt-4 mb-4">
-                                            <div class="input-group-btn search-panel">
-                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span id="search_concept">Filtro</span> <span class="caret"></span></button>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href="#">Categoría</a></li>
-                                                    <li><a href="#">Color</a></li>
-                                                    <li><a href="#">Marca</a></li>
-                                                    <li><a href="#">Precio</a></li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="#">Peso</a></li>
-                                                </ul>
-                                            </div>
                                             <input type="hidden" name="search_param" value="all" id="search_param" />
-                                            <input type="text" class="form-control table-shadow" name="x" placeholder="Búsqueda rápida" />
+                                            <input type="text" class="form-control border-search table-shadow" name="x" placeholder="Búsqueda rápida" />
                                             <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><span class="fa fa-search"></span></button>
+                                                <button class="btn btn-default" type="button"><span class="fas fa-search"></span></button>
                                             </span>
                                         </div>
                                     </div>
@@ -174,9 +181,9 @@
                                                         <td class="parrafo-ayuda" style="vertical-align: middle;">1</td>
                                                         <td class="parrafo-ayuda" style="vertical-align: middle;">$40.56</td>
 
-                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><i class="fas fa-edit fa-lg"></i></td>
-                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><i class="fas fa-clone fa-lg"></i></td>
-                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><i class="fas fa-window-close fa-lg"></i></td>
+                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><a href="#" class="no-blue"><i class="fas fa-edit fa-lg"></i></a></td>
+                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><a href="#" class="no-blue"><i class="fas fa-clone fa-lg"></i></a></td>
+                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><a href="#" class="no-blue"><i class="fas fa-window-close fa-lg"></i></a></td>
                                                     </tr>
                                                 </tbody>
 
@@ -190,7 +197,7 @@
                                                         <td class="parrafo-ayuda" style="vertical-align: middle;">$5.00</td>
                                                         <td class="text-left"></td>
                                                         <td class="text-left" width="5px" style="vertical-align: middle;">&nbsp;</td>
-                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><i class="fas fa-clone fa-lg"></i></td>
+                                                        <td class="text-left" width="5px" style="vertical-align: middle;"><a href="#" class="no-blue"><i class="fas fa-clone fa-lg"></i></a></td>
                                                         <td class="text-left" width="5px" style="vertical-align: middle;">&nbsp;</td>
                                                     </tr>
                                                 </tbody>
@@ -352,7 +359,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="mb-5">
-                            <img src="img/logo-light.png" alt="" class="" height="24" />
+                            <img src="img/logo-light.png" alt="" class="" height="50" />
                             <ul class="list-inline footer-social-icon-content">
                                 <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;"> PRODUCTOS RESTRINGIDOS</a></li>
                                 <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">TARIFAS</a></li>
@@ -365,10 +372,10 @@
                     <div class="col-lg-4">
                         <div class="">
                             <div class="mt-5">
-                                <p class="text-white font-size-13 text-right">DIRECCIÓN: San Francisco 2555, San Miguel, Santiago</p>
-                                <p class="text-white font-size-13 text-right">CORREO: INFO@CHIPER.CL</p>
-                                <p class="text-white font-size-13 text-right">COPYRIGHT 2019 XORMKT.CL</p>
-                                <ul class="list-inline footer-social-icon-content text-right">
+                                <p class="text-white font-size-13 text-right texto-centro">DIRECCIÓN: San Francisco 2555, San Miguel, Santiago</p>
+                                <p class="text-white font-size-13 text-right texto-centro">CORREO: INFO@CHIPER.CL</p>
+                                <p class="text-white font-size-13 text-right texto-centro">COPYRIGHT 2019 XORMKT.CL</p>
+                                <ul class="list-inline footer-social-icon-content text-right texto-centro">
                                     <li class="list-inline-item mr-4">
                                         <a href="#" class="footer-social-icon"><i class="fab fa-facebook-square" data-feather="facebook"></i></a>
                                     </li>
@@ -400,5 +407,32 @@
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".toggle-btn").click(function () {
+                    $(this).toggleClass("active").siblings().removeClass("active");
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            (function ($) {
+                $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+                    if (!$(this).next().hasClass("show")) {
+                        $(this).parents(".dropdown-menu").first().find(".show").removeClass("show");
+                    }
+                    var $subMenu = $(this).next(".dropdown-menu");
+                    $subMenu.toggleClass("show");
+
+                    $(this)
+                        .parents("li.nav-item.dropdown.show")
+                        .on("hidden.bs.dropdown", function (e) {
+                            $(".dropdown-submenu .show").removeClass("show");
+                        });
+
+                    return false;
+                });
+            })(jQuery);
+        </script>
     </body>
 </html>
