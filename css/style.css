@@ -313,4 +313,8 @@ p {
         margin-left: 9px;
     }
 
+    .no-display {
+        display: none;
+    }
+
 }
