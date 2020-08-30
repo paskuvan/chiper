@@ -7,43 +7,46 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/all.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
         <title>¿Cómo funciona? - Chiper</title>
     </head>
     <body>
         <div id="chiper">
             <!--Menu-->
-            <nav class="navbar navbar-expand-lg navbar-custom sticky sticky-dark">
-                <div class="container">
-                    <!-- LOGO -->
-                    <a class="navbar-brand logo" href="index.html">
-                        <img src="img/logo-light.png" alt="" class="logo-dark" height="24" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
-                            <li class="nav-item active texto-centro">
-                                <a href="#home" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item texto-centro">
-                                <a href="#funciona" class="nav-link">¿Cómo funciona?</a>
-                            </li>
-                            <li class="nav-item texto-centro">
-                                <a href="#ayuda" class="nav-link">Ayuda</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav navbar-center">
-                            <li class="nav-item texto-centro">
-                                <a href="#usuario" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="40" height="40" alt="" /></a>
-                                <a href="#compra" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart.png" width="40" height="40" alt="" /></a>
-                            </li>
-                            <li class="nav-item"></li>
-                        </ul>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-custom sticky sticky-dark">
+                    <div class="container">
+                        <!-- LOGO -->
+                        <a class="navbar-brand logo" href="index.html">
+                            <img src="img/logo-light.png" alt="" class="logo-dark" height="50" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars toggle-light"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+                                <li class="nav-item active">
+                                    <a href="#home" class="nav-link texto-centro">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#funciona" class="nav-link texto-centro">¿Cómo funciona?</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#ayuda" class="nav-link texto-centro">Ayuda</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav navbar-center">
+                                <li class="nav-item">
+                                    <a href="#usuario" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="52" height="52" alt="" /></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#compra" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart.png" width="52" height="52" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
 
             <!--Comencemos a buscar-->
             <div class="buscar" style="background-image: url(img/bg-img.png);">
@@ -56,85 +59,88 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
+                    <div class="row align-items-center" style="margin-bottom: 20px;">
+                        <div class="col-lg-6 order-2 order-md-1">
                             <h3 class="font-weight-semibold line-height-1_4 mb-4 text-right text-white texto-centro">COMENCEMOS A BUSCAR</h3>
                             <p class="text-white font-size-17 mb-4 text-right texto-centro">
                                 Compra tus productos en Amazon.com. Pega el enlace (Url) del producto que deseas comprar en Amazon (Fijate bien en pegar el enlace con todas las especificaciones requeridas), (este producto puede tener envios
                                 directos a Chile, como no tenerlos) directamente en la barra de búsqueda para ser cotizado.
                             </p>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 order-1 order-md-2">
                             <div class="mt-4 mt-lg-0">
                                 <img src="img/img01.png" alt="" class="img-fluid d-block mx-auto img-funciona max-width-60" />
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Compra y relajate-->
-            <div class="compra" style="background-image: url(img/bg-img.png);">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="mb-4 mb-lg-0">
-                                <img src="img/img02.png" alt="" class="img-fluid d-block mx-auto img-funciona max-width-60" />
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6">
-                            <h3 class="font-weight-semibold line-height-1_4 mb-4 text-white texto-centro">COMPRA Y RELAJATE</h3>
-                            <p class="text-white font-size-17 mb-4">
-                                El precio final que entrega Chiper de tu producto contempla: Precio del producto, envío y manejo intenacional, impuestos y aduana, opciones de pago y entrega del producto a domicilio.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Así vamos a pagar-->
-            <div class="pagar" style="background-image: url(img/bg-img.png);" id="features">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <h3 class="font-weight-semibold line-height-1_4 mb-4 text-right text-white texto-centro">ASÍ VAMOS A PAGAR</h3>
-                            <p class="text-white font-size-17 mb-4 text-right texto-centro">
-                                En Chiper puedes hacer el pago de tus productos mediante el uso de tarjetas tanto de crédito cómo de débito nacionales e internacionales que cuenten con 3d secure.
-                            </p>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="mt-4 mt-lg-0">
-                                <img src="img/img03.png" alt="" class="img-fluid d-block mx-auto img-funciona max-width-60" />
+                <!--Compra y relajate-->
+                <div class="compra" style="background-image: url(img/bg-img.png);">
+                    <div class="container">
+                        <div class="row align-items-center order-2 order-md-1">
+                            <div class="col-lg-6">
+                                <div class="mb-4 mb-lg-0">
+                                    <img src="img/img02.png" alt="" class="img-fluid d-block mx-auto img-funciona max-width-60" />
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <h3 class="font-weight-semibold line-height-1_4 mb-4 text-white texto-centro order-1 order-md-2">COMPRA Y RELAJATE</h3>
+                                <p class="text-white font-size-17 mb-4 texto-centro">
+                                    El precio final que entrega Chiper de tu producto contempla: Precio del producto, envío y manejo intenacional, impuestos y aduana, opciones de pago y entrega del producto a domicilio.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Ya no lo quiero-->
-            <div class="devolver" style="background-image: url(img/bg-img.png);">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="mb-4 mb-lg-0">
-                                <img src="img/img04.png" alt="" class="img-fluid d-block mx-auto img-funciona max-width-60" />
+                <!--Así vamos a pagar-->
+                <div class="pagar" style="background-image: url(img/bg-img.png);" id="features">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-2 order-md-1">
+                                <h3 class="font-weight-semibold line-height-1_4 mb-4 text-right text-white texto-centro" style="margin-top: 50px;">ASÍ VAMOS A PAGAR</h3>
+                                <p class="text-white font-size-17 mb-4 text-right texto-centro">
+                                    En Chiper puedes hacer el pago de tus productos mediante el uso de tarjetas tanto de crédito cómo de débito nacionales e internacionales que cuenten con 3d secure.
+                                </p>
                             </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h3 class="font-weight-semibold line-height-1_4 mb-4 text-white texto-centro">YA NO LO QUIERO</h3>
-                            <p class="text-white font-size-17 mb-4 texto-centro">Para realizar una correcta devolución del producto recuerda siempre guardar el embajale original de tus productos para poder hacer uso de tu garantía legal</p>
+                            <div class="col-lg-6 order-1 order-md-2">
+                                <div class="mt-4 mt-lg-0">
+                                    <img src="img/img03.png" alt="" class="img-fluid d-block mx-auto img-funciona max-width-60" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!--Ya no lo quiero-->
+                <div class="devolver" style="background-image: url(img/bg-img.png);">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="mb-4 mb-lg-0">
+                                    <img src="img/img04.png" alt="" class="img-fluid d-block mx-auto img-funciona max-width-60" />
+                                </div>
+                            </div>
 
-            <!--boton-->
-            <div class="boton-contacto" id="contact" style="background-image: url(img/footer.png); background-size: cover;">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="text-center mb-5">
-                                <a href="#"><img src="img/button.png" alt="" class="button-img max-width-60" /></a>
-                                <p class="text-white font-size-17 mt-2">Y comienza a comprar</p>
+                            <div class="col-lg-6">
+                                <h3 class="font-weight-semibold line-height-1_4 mb-4 text-white texto-centro">YA NO LO QUIERO</h3>
+                                <p class="text-white font-size-17 mb-4 texto-centro">
+                                    Para realizar una correcta devolución del producto recuerda siempre guardar el embajale original de tus productos para poder hacer uso de tu garantía legal
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--boton-->
+                <div class="boton-contacto" id="contact" style="background-image: url(img/footer.png); background-size: cover;">
+                    <div class="container">
+                        <div class="row justify-content-center" style="margin-top: 40px;">
+                            <div class="col-lg-6">
+                                <div class="text-center mb-5">
+                                    <a href="#"><img src="img/button.png" alt="" class="button-img max-width-60" /></a>
+                                    <p class="text-white font-size-17 mt-2">Y comienza a comprar</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -143,12 +149,12 @@
         </div>
 
         <!--Footer-->
-        <div class="footer">
+        <section class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="mb-5">
-                            <img src="img/logo-light.png" alt="" class="" height="24" />
+                            <img src="img/logo-light.png" alt="" class="" height="50" />
                             <ul class="list-inline footer-social-icon-content">
                                 <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;"> PRODUCTOS RESTRINGIDOS</a></li>
                                 <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">TARIFAS</a></li>
@@ -156,15 +162,15 @@
                                 <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">TÉRMINOS Y CONDICIONES</a></li>
                             </ul>
                         </div>
-                        <img src="img/footer-pago.png" alt="" class="footer-pago max-width-100" />
+                        <img src="img/footer-pago.png" alt="" class="footer-pago" />
                     </div>
                     <div class="col-lg-4">
                         <div class="">
                             <div class="mt-5">
-                                <p class="text-white font-size-13 text-right">DIRECCIÓN: San Francisco 2555, San Miguel, Santiago</p>
-                                <p class="text-white font-size-13 text-right">CORREO: INFO@CHIPER.CL</p>
-                                <p class="text-white font-size-13 text-right">COPYRIGHT 2019 XORMKT.CL</p>
-                                <ul class="list-inline footer-social-icon-content text-right">
+                                <p class="text-white font-size-13 text-right texto-centro">DIRECCIÓN: San Francisco 2555, San Miguel, Santiago</p>
+                                <p class="text-white font-size-13 text-right texto-centro">CORREO: INFO@CHIPER.CL</p>
+                                <p class="text-white font-size-13 text-right texto-centro">COPYRIGHT 2019 XORMKT.CL</p>
+                                <ul class="list-inline footer-social-icon-content text-right texto-centro">
                                     <li class="list-inline-item mr-4">
                                         <a href="#" class="footer-social-icon"><i class="fab fa-facebook-square" data-feather="facebook"></i></a>
                                     </li>
@@ -189,7 +195,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!--Script-->
         <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
         <script type="text/javascript" src="js/popper.min.js"></script>

@@ -62,7 +62,7 @@ h2 {
 }
 
 .img-funciona {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .button-img {
@@ -301,7 +301,7 @@ p {
         min-width: 250px;
         display: none;
     }
-    
+
     .mainmenu .collapse ul ul li {
         position: relative;
     }
@@ -315,7 +315,7 @@ p {
         min-width: 250px;
         display: none;
     }
-    
+
     .mainmenu .collapse ul ul ul li {
         position: relative;
     }
@@ -411,7 +411,6 @@ p {
 /*carrousel */
 
 .carousel {
-    
     padding: 0 70px;
 }
 .carousel .item {
@@ -553,6 +552,7 @@ p {
     font-size: 14px;
     color: #e963d7;
 }
+
 /* media query 768px */
 
 @media (max-width: 768px) {
@@ -632,6 +632,4 @@ p {
         font-size: 17px;
         margin: 20px 0;
     }
-
-
 }
