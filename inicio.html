@@ -7,43 +7,46 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/all.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
         <title>Iniciar sesión - Chiper</title>
     </head>
     <body>
         <div>
              <!--Menu-->
-             <nav class="navbar navbar-expand-lg navbar-custom sticky sticky-dark">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-custom sticky sticky-dark">
                 <div class="container">
                     <!-- LOGO -->
                     <a class="navbar-brand logo" href="index.html">
-                        <img src="img/logo-light.png" alt="" class="logo-dark" height="24" />
+                        <img src="img/logo-light.png" alt="" class="logo-dark" height="50" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars toggle-light"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
-                            <li class="nav-item active texto-centro">
-                                <a href="#home" class="nav-link">Home</a>
+                            <li class="nav-item active">
+                                <a href="#home" class="nav-link texto-centro">Home</a>
                             </li>
-                            <li class="nav-item texto-centro">
-                                <a href="#funciona" class="nav-link">¿Cómo funciona?</a>
+                            <li class="nav-item">
+                                <a href="#funciona" class="nav-link texto-centro">¿Cómo funciona?</a>
                             </li>
-                            <li class="nav-item texto-centro">
-                                <a href="#ayuda" class="nav-link">Ayuda</a>
+                            <li class="nav-item">
+                                <a href="#ayuda" class="nav-link texto-centro">Ayuda</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav navbar-center">
-                            <li class="nav-item texto-centro">
-                                <a href="#usuario" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="40" height="40" alt="" /></a>
-                                <a href="#compra" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart.png" width="40" height="40" alt="" /></a>
+                            <li class="nav-item">
+                                <a href="#usuario" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="52" height="52" alt="" /></a>
                             </li>
-                            <li class="nav-item"></li>
+                            <li class="nav-item">
+                                <a href="#compra" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart.png" width="52" height="52" alt="" /></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+        </div>
         
 
         <div class="background-inicio" style="background-image: url(img/header-registro.png); height: 320px; background-size: cover;"></div>
@@ -70,7 +73,14 @@
                             <div class="form-group texto-ayuda">
                                 <label for="exampleInputPassword1">Contraseña</label>
                                 <input type="password" class="form-control table-shadow" id="exampleInputPassword1" placeholder="***************" />
-                                <input type="checkbox" class="mt-4" checked data-toggle="toggle" data-style="ios" /> Recordarme
+                                <div class="form-group col-md-6 ftwo py-3 order-3">
+                                    <label for="mail" class="texto toggle-left">Recordarme</label>
+                                    <div class="pt-2">
+                                        <div class="toggle-btn active">
+                                            <div class="inner-circle"></div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary">Ingresar</button>
@@ -87,59 +97,66 @@
         </div>
     </div>
 
-        <!--Footer-->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="mb-5">
-                            <img src="img/logo-light.png" alt="" class="" height="24" />
-                            <ul class="list-inline footer-social-icon-content">
-                                <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;"> PRODUCTOS RESTRINGIDOS</a></li>
-                                <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">TARIFAS</a></li>
-                                <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">BASES LEGALES</a></li>
-                                <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">TÉRMINOS Y CONDICIONES</a></li>
-                            </ul>
-                        </div>
-                        <img src="img/footer-pago.png" alt="" class="footer-pago max-width-100" />
+      <!--Footer-->
+      <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="mb-5">
+                        <img src="img/logo-light.png" alt="" class="" height="50" />
+                        <ul class="list-inline footer-social-icon-content">
+                            <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;"> PRODUCTOS RESTRINGIDOS</a></li>
+                            <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">TARIFAS</a></li>
+                            <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">BASES LEGALES</a></li>
+                            <li class="text-white list-inline-item mr-4 mt-4 font-size-13"><a href="#" style="color: white;">TÉRMINOS Y CONDICIONES</a></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="">
-                            <div class="mt-5">
-                                <p class="text-white font-size-13 text-right">DIRECCIÓN: San Francisco 2555, San Miguel, Santiago</p>
-                                <p class="text-white font-size-13 text-right">CORREO: INFO@CHIPER.CL</p>
-                                <p class="text-white font-size-13 text-right">COPYRIGHT 2019 XORMKT.CL</p>
-                                <ul class="list-inline footer-social-icon-content text-right">
-                                    <li class="list-inline-item mr-4">
-                                        <a href="#" class="footer-social-icon"><i class="fab fa-facebook-square" data-feather="facebook"></i></a>
-                                    </li>
-                                    <li class="list-inline-item mr-4">
-                                        <a href="#" class="footer-social-icon"><i class="fab fa-instagram" data-feather="instagram"></i></a>
-                                    </li>
-                                    <li class="list-inline-item mr-4">
-                                        <a href="#" class="footer-social-icon"><i class="fab fa-twitter" data-feather="twitter"></i></a>
-                                    </li>
-                                    <li class="list-inline-item mr-4">
-                                        <a href="#" class="footer-social-icon"><i class="fab fa-linkedin" data-feather="linkedin"></i></a>
-                                    </li>
-                                    <li class="list-inline-item mr-4">
-                                        <a href="#" class="footer-social-icon"><i class="fab fa-youtube" data-feather="youtube"></i></a>
-                                    </li>
-                                    <li class="list-inline-item mr-4">
-                                        <a href="#" class="footer-social-icon"><i class="fas fa-paper-plane" data-feather="envelope"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <img src="img/footer-pago.png" alt="" class="footer-pago" />
+                </div>
+                <div class="col-lg-4">
+                    <div class="">
+                        <div class="mt-5">
+                            <p class="text-white font-size-13 text-right texto-centro">DIRECCIÓN: San Francisco 2555, San Miguel, Santiago</p>
+                            <p class="text-white font-size-13 text-right texto-centro">CORREO: INFO@CHIPER.CL</p>
+                            <p class="text-white font-size-13 text-right texto-centro">COPYRIGHT 2019 XORMKT.CL</p>
+                            <ul class="list-inline footer-social-icon-content text-right texto-centro">
+                                <li class="list-inline-item mr-4">
+                                    <a href="#" class="footer-social-icon"><i class="fab fa-facebook-square" data-feather="facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-4">
+                                    <a href="#" class="footer-social-icon"><i class="fab fa-instagram" data-feather="instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-4">
+                                    <a href="#" class="footer-social-icon"><i class="fab fa-twitter" data-feather="twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-4">
+                                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin" data-feather="linkedin"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-4">
+                                    <a href="#" class="footer-social-icon"><i class="fab fa-youtube" data-feather="youtube"></i></a>
+                                </li>
+                                <li class="list-inline-item mr-4">
+                                    <a href="#" class="footer-social-icon"><i class="fas fa-paper-plane" data-feather="envelope"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
         <!--Script-->
         <script type="text/javascript" src="js/jquery-3.4.1.slim.min.js"></script>
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".toggle-btn").click(function () {
+                    $(this).toggleClass("active").siblings().removeClass("active");
+                });
+            });
+        </script>
     </body>
 </html>
