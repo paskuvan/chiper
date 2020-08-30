@@ -63,6 +63,24 @@ h2 {
     color: #676a76;
 }
 
+.pedido {
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.badge-pink {
+    border: 1px solid #e885ad;
+    color: #e885ad;
+    background-color: transparent;
+}
+
+.badge-blue {
+    border: 1px solid #0303a8;
+    color: #0303a8;
+    background-color: transparent;
+}
+
 .footer-pago {
     max-width: 100%;
 }

@@ -17,29 +17,29 @@
                 <div class="container">
                     <!-- LOGO -->
                     <a class="navbar-brand logo" href="index.html">
-                        <img src="img/logo-dark.png" alt="" class="logo-dark" height="35" />
+                        <img src="img/logo-dark.png" alt="" class="logo-dark" height="50" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="mdi mdi-menu"></i>
+                        <i class="fas fa-bars toggle-dark"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
                             <li class="nav-item active">
-                                <a href="#home" class="nav-link"><span style="color: #63656b;">Home</span></a>
+                                <a href="#home" class="nav-link texto-centro"><span style="color: #63656b;">Home</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#funciona" class="nav-link"><span style="color: #63656b;">¿Cómo funciona?</span></a>
+                                <a href="#funciona" class="nav-link texto-centro"><span style="color: #63656b;">¿Cómo funciona?</span></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#ayuda" class="nav-link"><span style="color: #63656b;">Ayuda</span></a>
+                                <a href="#ayuda" class="nav-link texto-centro"><span style="color: #63656b;">Ayuda</span></a>
                             </li>
                         </ul>
                         <ul class="navbar-nav navbar-center">
                             <li class="nav-item">
-                                <a href="#usuario" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="52" height="52" alt="" /></a>
+                                <a href="#usuario" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter"><img src="img/btn-user.png" width="52" height="52" alt="" /></a>
                             </li>
                             <li class="nav-item">
-                                <a href="#compra" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart-dark.png" width="52" height="52" alt="" /></a>
+                                <a href="#compra" class="nav-link texto-centro" data-toggle="modal" data-target="#exampleModalCenter-1"><img src="img/btn-cart-dark.png" width="52" height="52" alt="" /></a>
                             </li>
                         </ul>
                     </div>
@@ -47,16 +47,71 @@
             </nav>
         </div>
 
+         <!--Dropdown Menu-->
+         <div style="background-color: white;">
+            <div id="menu_area" class="menu-area">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars toggle-light"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto texto-centro">
+                                    <li><a href="#">Órdenes</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Devoluciones</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Solicitar</a></li>
+                                            <li><a href="#">Estado</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Productos</a></li>
+                                            <li><a href="#">Opciones de tipeo</a></li>
+                                            <li><a href="#">Propiedades</a></li>
+                                            <li><a href="#">Clasificaciones</a></li>
+                                            <li><a href="#">Clasificados</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Reportes</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Promoción</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Ofertas</a></li>
+                                            <li><a href="#">Cupones</a></li>
+                                            <li><a href="#">Descuentos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Usuario</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Configuración</a>
+                                        <ul class="dropdown-menu texto-centro" aria-labelledby="navbarDropdown">
+                                            <li><a href="#">Perfil</a></li>
+                                            <li><a href="#">Notificaciones</a></li>
+                                            <li><a href="#">Dirección</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--ordenes-->
         <div>
             <div class="container">
                 <div class="row mt-3 mb-3">
                     <div class="col-lg-6">
-                        <h4 class="texto-ayuda d-flex justify-content-start">Órdenes</h4>
+                        <h4 class="texto-ayuda d-flex justify-content-start mt-2 mb-2">Órdenes</h4>
                     </div>
                     <div class="col-lg-6">
-                        <p class="parrafo-ayuda font-size-15 d-flex justify-content-end">
-                            Nueva orden &nbsp;<a href="#"><img src="img/btn-producto.png" height="40" width="40" alt="" /></a>
+                        <p class="parrafo-ayuda font-size-15 d-flex justify-content-end mt-2 mb-2">
+                            Nueva orden &nbsp;<a href="#"><img src="img/btn-producto.png" height="30" width="30" alt="" /></a>
                         </p>
                     </div>
                 </div>
@@ -87,10 +142,10 @@
                 </div>
                 <div class="col-lg-6 no-display texto-centro">
                     <div class="input-group">
+                        <span class="parrafo-ayuda pedido font-size-15">Pedidos mostrados</span>
                         <div class="input-group-btn search-panel">
-                            <button type="button" class="btn btn-default dropdown-toggle table-shadow" data-toggle="dropdown">Pedidos mostrados <span id="search_concept"></span> <span class="caret"></span></button>
+                            <button type="button" class="btn btn-default dropdown-toggle table-shadow" data-toggle="dropdown">20 <span id="search_concept"></span> <span class="caret"></span></button>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">20</a></li>
                                 <li><a href="#">30</a></li>
                                 <li><a href="#">50</a></li>
                                 <li><a href="#">100</a></li>
@@ -125,10 +180,10 @@
                                         <tr class="cell-1 parrafo-ayuda text-center">
                                             <td>28 / 10 / 2020</td>
                                             <td>654JHGHFD564H</td>
-                                            <td><span class="badge badge-success">Seguro</span></td>
-                                            <td><span class="badge badge-success">Completado</span></td>
-                                            <td><span class="badge badge-success">Por pagar</span></td>
-                                            <td><span class="badge badge-success">Pendiente</span></td>
+                                            <td><span class="badge badge-success badge-blue">Seguro</span></td>
+                                            <td><span class="badge badge-success badge-blue">Completado</span></td>
+                                            <td><span class="badge badge-success badge-pink">Por pagar</span></td>
+                                            <td><span class="badge badge-success badge-pink">Pendiente</span></td>
                                             <td>Felipe@gmail.com</td>
                                             <td>$40.56</td>
                                             <td>
