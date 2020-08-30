@@ -304,8 +304,8 @@ p {
     }
 
     .background-inicio {
-        height: 72px !important;
-        background-size: contain !important;
+        height: 100px !important;
+        background-size: cover !important;
         background-repeat: no-repeat !important;
     }
 
